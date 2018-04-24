@@ -3,19 +3,24 @@
    <head>
        <!-- Bootstrap minified CSS link     --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
        <!-- Font Awesome icons link         --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> 
-       <!-- CSS3 powered hover effects link --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-       <!-- style.css link                  --> <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-       <meta charset="utf-8">
+       <!-- CSS3 powered hover effects link --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+       <!-- Main CSS link                   --> <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+       <!-- Required mega tags              --> <meta charset="utf-8">
        <title> UCD Resumé Project Resumé (Paul Bennett) </title>
    </head>
    
-   <body>
+   <body>         
+       <!-- col-xs-# = Bootstrap  Extra Small devices Phones   <  544px -->
+       <!-- col-sm-# = Bootstrap        Small devices Tablets  ≥  544px -->
+       <!-- col-md-# = Bootstrap       Medium devices Desktops ≥  768px -->   
+       <!-- col-ld-# = Bootstrap       Large  devices Desktops ≥  992px --> 
+       <!-- col-xl-# = Bootstrap  Extra Larg  devices Desktops ≥ 1200px --> 
        <header class="container-fluid">
             <div class="row">
                 <a href="index.html">
-                    <div class="col-sm-4 logo"> </div>  
+                    <div class="col-sm-4 logo">  </div>  
                 </a>
-                <div class="col-sm-8">
+                <div class="col-sm-8">          
                     <div class="row bg-color-name-title">
                         <div class="heading">
                             <h1 class="name"> Paul Bennett </h1>
@@ -24,7 +29,7 @@
                     </div>
                     <div class="row">
                      <ul id="nav" class="list-inline clearfix">
-                      <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
+                      <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem"> 
                           <a href="index.html" class="hvr-sweep-to-bottom"> <i class="fa fa-home" arial hidden="true"></i> <span>Home</span> </a>
                       </li>
                       <li class="col-xs-6 col-sm-3 ui-menu-color-resume menuitem">
@@ -41,13 +46,31 @@
                 </div>
             </div>
         </header>
-        
+                        
         <section class="container-fluid">
                <div class="row row-table">
-                   <div class="col-xs-12 col-sm-12 col-md-4 bg-color-personal-info section-column">
+                   <div class="col-xs-12 col-sm-12 col-md-4 bg-color-work-history section-column">
                        <div class="row">
                            <div class="col-md-12">
-                              <h3 class="section-heading uppercase"> Work History </h3>
+                              <h3 class="history-heading uppercase"> Work History </h3>
+                           </div>
+                       </div>
+                       <div class="History-items">
+                           <div class="timeline-item" dates="02/1998 - 04/2004">
+                               <h4> National College of Arts and Design (NCAD) </h4>
+                               <p> Sculptor in residence </p>
+                           </div>
+                           <div class="timeline-item" dates="04/2004 - 06/2008">
+                               <h4> Fisher and Diaz Funeral Directors </h4>
+                               <p> Junior Ebalmer </p>
+                           </div>
+                           <div class="timeline-item" dates="06/2008 - 06/2011">
+                               <h4> Phantom Design Inc Dublin </h4>
+                               <p> Junior Front End Developer </p>
+                           </div>
+                           <div class="timeline-item" dates="06/2011 - Present">
+                               <h4> Hooli Inc. Silicon Valley </h4>
+                               <p> Full Stack Web Developer </p>
                            </div>
                        </div>
                    </div>
@@ -90,33 +113,33 @@
                        </div>
                       <div class="row">
                           <div class="progress">
-                           <div class="progress-bar" role="progressbar-section" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                              <span class="sr-only"> 90% Complete </span>   
-                           </div>
-                              <span class="progress-type"> HTML / HTML5 </span>
-                       </div>
-                          <div class="progress">
-                           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                              <span class="sr-only"> 80% Complete </span>   
-                           </div>
-                              <span class="progress-type"> CSS / CSS3 </span>
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                 <span class="sr-only"> 90% Complete </span>   
+                              </div>
+                                 <span class="progress-type"> HTML / HTML5 </span>
                           </div>
                           <div class="progress">
-                           <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                              <span class="sr-only"> 70% Complete </span>   
-                           </div>
-                              <span class="progress-type"> Javascript / jQuery </span>
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                 <span class="sr-only"> 80% Complete </span>   
+                              </div>
+                                 <span class="progress-type"> CSS / CSS3 </span>
                           </div>
                           <div class="progress">
-                           <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                              <span class="sr-only"> 80% Complete </span>   
-                           </div>
-                              <span class="progress-type"> Phyton / Django </span>
+                              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                 <span class="sr-only"> 70% Complete </span>   
+                              </div>
+                                 <span class="progress-type"> Javascript / jQuery </span>
                           </div>
                           <div class="progress">
-                           <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                              <span class="sr-only"> 80% Complete </span>   
-                           </div>
+                              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                 <span class="sr-only"> 80% Complete </span>   
+                              </div>
+                                 <span class="progress-type"> Phyton / Django </span>
+                          </div>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                 <span class="sr-only"> 80% Complete </span>   
+                              </div>
                               <span class="progress-type"> SQL / noSQL </span>
                           </div>
                        </div>
@@ -127,21 +150,21 @@
        <footer class="container-fluid">
             <div class="row"> 
                 <div class="col-sm-4">
-                    <h5 class="uppercase general-sub"> About </h5>
+                    <h5 class="general-sub uppercase"> About </h5>
                     <p class="inline-block"> 
                        Full Stack Web Developer. Skilled in everything from HTML to Heroku. 
                        The capacity for structual and design thinking. 
                     </p>
                 </div>
                 <div class="col-sm-4">
-                    <h5 class="uppercase general-sub"> Download My CV </h5>
+                    <h5 class="general-sub uppercase"> Download My CV </h5>
                     <p class="inline-block"> 
                        Need a printable version of my CV? Download it here.
                        <a href="#" class="cv-pdf"> <i class="fa fa-download" arial hidden="true"> </i> </a>
                     </p>
                 </div>
                 <div class="col-sm-4">
-                    <h5 class="uppercase general-sub"> My Social </h5>
+                    <h5 class="general-sub uppercase"> My Social </h5>
                     <ul class="list-inline social-links">
                         <li> <a target="_blank" href="#"> <i class="fa fa-facebook">  </i> </a> </li>
                         <li> <a target="_blank" href="#"> <i class="fa fa-twitter">   </i> </a> </li>
